@@ -68,8 +68,10 @@ class PlatformInfoScreen extends StatelessWidget {
               children: [
                 Text('Hostname: ${platform.localHostname}\n'),
                 Text('Platform: ${getPlatform()} ${platform.version}\n'),
-                Text('OS: ${getOS()} | Processors: ${platform.numberOfProcessors}\n'),
-                Text('Currently executing `${platform.executable}` with args: ${platform.executableArguments}\n'),
+                Text(
+                    'OS: ${getOS()} | Processors: ${platform.numberOfProcessors}\n'),
+                Text(
+                    'Currently executing `${platform.executable}` with args: ${platform.executableArguments}\n'),
                 Text('Environment variables:\n${getFirstEnvVars()}'),
               ],
             ),
